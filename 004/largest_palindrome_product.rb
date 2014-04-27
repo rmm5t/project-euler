@@ -7,5 +7,5 @@ puts (1...max).flat_map { |n|
   (n...max).flat_map { |t|
     product = (n*t).to_s;
     product.to_i if (product.reverse == product)
-  }
-}.compact.sort.max
+  }.compact
+}.max
