@@ -3,7 +3,7 @@ require "matrix"
 require "bitset"
 
 max = (ARGV[0] || 1500000).to_i
-
+abort("Cannot input a negative number") unless max > 0
 
 m = Matrix.row_vector([3,4,5])
 
