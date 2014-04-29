@@ -12,6 +12,7 @@ fibonaccis = Fiber.new do
 end
 
 max = (ARGV[0] || 4_000_000).to_i
+abort("Cannot input a negative number") unless max > 0
 sum = 0
 loop do
   n = fibonaccis.resume
